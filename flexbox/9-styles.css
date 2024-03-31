@@ -527,7 +527,7 @@ margin: var(--nav-item-margin);
 }
 
 /* Section ABOUT US*/
-.section-about-us .col-{
+.section-about-us .col- {
   align-self: center;
 }
 
