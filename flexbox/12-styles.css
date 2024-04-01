@@ -706,12 +706,12 @@ margin-top: -8.5rem;
      /* Post
     ============================= */
 .post{
-  display:flex;
+  display: flex;
 }
 .post-content{
-  width:100%;
+  width: 100%;
 }
 .post-aside{
-  order:1;
-  min-width:20%;
+  order: -1;
+  min-width: 20%;
 }
