@@ -1,0 +1,11 @@
+ul {
+ 
+}
+
+ul li{
+position: absolute;
+}
+ul li .icon img{
+  width: 34rem;
+
+}

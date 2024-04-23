@@ -1,0 +1,9 @@
+h2 a{
+  color: rgb(149, 45, 45);
+  text-decoration: none;
+  transition: text-decoration 4s ease-out;
+}
+h2 a:hover{
+  text-decoration: underline;
+   transition: text-decoration 4s ease-in;
+}

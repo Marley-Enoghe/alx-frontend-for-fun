@@ -1,0 +1,59 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the menu */
+.menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+/* Style for the menu open checkbox */
+.menu-open {
+  display: none;
+}
+
+/* Style for the menu open button label */
+.menu-open-button {
+  position: relative;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+/* Style for the menu lines */
+.menu-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Style for the first line */
+.menu-line-1 {
+  transform: translate(-50%, -50%);
+}
+
+/* Style for the second line */
+.menu-line-2 {
+  transform: translate(-50%, -50%);
+}
+
+/* Style for the third line */
+.menu-line-3 {
+  transform: translate(-50%, -50%);
+}
+
+/* Animation for the menu lines when menu is open */
+.menu-open:checked + .menu-open-bu

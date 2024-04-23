@@ -1,0 +1,76 @@
+/* Styles for the container */
+.toggle {
+  display: inline-block;
+}
+
+/* Styles for the checkbox */
+.toggle-cb {
+  display: none; /* Hide the actual checkbox */
+}
+
+/* Styles for the label */
+.toggle-label {
+  display: block;
+  width: 60px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  background-color: #ccc;
+  border-radius: 15px; /* Rounded corners */
+  position: relative;
+  cursor: pointer;
+}
+
+/* Styles for the inner toggle */
+.toggle-inner {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%; /* Circle shape */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s; /* Smooth transition for movement */
+}
+
+/* Styles for the toggle switch */
+.toggle-switch {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 50%; /* Circle shape */
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s; /* Smooth transition for movement */
+}
+
+/* Styles for the checked state */
+.toggle-cb:checked + .toggle-label .toggle-inner {
+  background-color: red; /* Change background color to red when checked */
+  color: white; /* Text color */
+  transform: translateX(100%); /* Move inner toggle to the right */
+}
+
+.toggle-cb:checked + .toggle-label .toggle-inner::after {
+  content: 'Yes'; /* Display "Yes" text when checked */
+}
+
+.toggle-cb:checked + .toggle-label .toggle-switch {
+  background-color: red; /* Change background color to red when checked */
+  transform: translateX(100%); /* Move toggle switch to the right */
+}
+
+/* Styles for the unchecked state */
+.toggle-cb:not(:checked) + .toggle-label .toggle-inner {
+  background-color: grey; /* Change background color to grey when unchecked */
+  color: black; /* Text color */
+  transform: translateX(0); /* Move inner toggle to the left */
+}
+
+.toggle-cb:not(:checked) + .toggle-label .toggle-inner::after {
+  content: 'No'; /* Display "No" text when unchecked */
+}
+
+.toggle-cb:not(:checked) + .toggle-label .toggle-switch {
+  background-color: grey; /* Change background color to grey when unchecked */
+  transform: translateX(0); /* Move toggle switch to the left */
+}
